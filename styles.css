@@ -21,30 +21,28 @@
   background-color: rgb(180,180,180);
   padding: 25px;
   border-radius: 10px;
-  width: 70vw;
-  min-width: 1200px;
+  width: 1000px;
+  min-width: 1000px;
 }
 
 .right {
   display: flex;
-  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 50%;
   height: 70%;
   min-height: 350px;
 }
 
 .picture {
   background-image: url('../src/assets/images/code.jpg');
-  height: 50vh;
+  height: 400px;
   width: 100%;
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px;
-  min-height: 350px;
 }
 
 .gradient {
@@ -53,7 +51,7 @@
   align-items: center;
   border-radius: 10px;
   justify-content: space-between;
-  padding-top: 5vh;
+  padding-top: 100px;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -63,9 +61,13 @@
   border-radius: 10px;
 }
 
+.logo {
+  /* margin-top: 6.5vh; */
+}
+
 .link {
   color: white;
-  margin: 1vh;
+  margin-bottom: 10px;
 }
 
 .link > a:link {
@@ -90,8 +92,8 @@ a:visited {
   align-items: center;
   justify-content: space-between;
   width: 50%;
-  height: 50vh;
-  padding: 25px;
+  height: 400px;
+  margin-right: 25px;
 }
 
 h1 {
@@ -103,24 +105,93 @@ h1 {
 p {
   font-family: 'Lato', sans-serif;
   color: rgb(9,10,17);
-  font-size: 1.1rem;
+  font-size: 16px;
   text-align: justify;
 }
 
 .input {
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
   color: rgb(9,10,17);
-  border: 2px solid red;
+  margin: 5px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+}
+
+.input > input {
+  font-family: 'Lato', sans-serif;
+  color: rgb(9,10,17);
+  border: none;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: rgb(226,229,229);
+  box-shadow: none;
+  margin-top: 5px;
+}
+
+.input > input:focus {
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  color: white;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgba(108,40,126,.85) 0%, rgba(38,41,90,.85) 100%);
+  outline: none;
 }
 
 ::placeholder {
   font-family: 'Lato', sans-serif;
-  color: rgb(103,105,139);
+  color: #484961;
   font-weight:400;
 }
 
 
 .log-in {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 32px;
+}
+
+.columns {
+  display: flex;
+}
+
+.col-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(9,10,17);
+  background-color: rgb(226,229,229);
+  padding: 10px;
+  margin-top: 15px;
+  width: 125px;
+  border-radius: 60px;
+  border-color: rgb(108,40,126);
+  font-size: 16px;
+}
+
+.button:hover {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, rgba(108,40,126,.85) 0%, rgba(38,41,90,.85) 100%);
+  color: rgb(226,229,229);
+  transform: scale(1.085);
+  cursor: pointer;
 }
